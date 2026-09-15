@@ -1521,3 +1521,510 @@ print('*' * 120)
 print("Fin, gracias.")
 
 print('*' * 120)
+
+
+PS C:\Users\lerf2\AppData\Local\Programs\Microsoft VS Code> & C:\Users\lerf2\AppData\Local\Python\pythoncore-3.14-64\python.exe "c:/Users/lerf2/OneDrive/Escritorio/KONRAD/SEM I/FUNDAMENTALS OF PROGRAMATION/Taller programación septiembre 14 v1.py"
+========================================================================================================================
+Desarrollo taller Fundamentos de programación - Taller de entrenamiento de programación y razonamiento lógico
+
+Integrantes: 
+                    
+    Ayda Johanna Bermudez Leon 
+    Luis Eduardo Reyes Fernández
+    Katherinne Stella Castaneda Rodriguez
+
+Docente: Ivan Dario Rico Arias
+
+Universidad Konrad Lorenz - Especialización en analítica de datos e IA
+
+Fecha: 2024-09-16
+========================================================================================================================
+
+========================================================================================================================
+PROBLEMA 1 - EVALUACIÓN DE PEDIDOS PARA DESPACHO
+========================================================================================================================
+
+************************************************************************************************************************
+Creamos diccionario con los datos de cada cliente utilizando listas
+
+Recibe: Todos los datos de la tabla de pedidos.
+Devuelve: Alimenta todos los calculos de las funciones posteriores.
+
+************************************************************************************************************************
+************************************************************************************************************************
+Utilizamos la función for para recorrer todos los valores del diccionario......etc.....etc.....XXXXXXXXXX
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Cliente: Laura
+Estado: APROBADO
+Descuento: 0 %
+Valor después del descuento: 1500000.0
+Envío: 35000
+Valor final: 1535000.0
+Inventario restante: 40
+
+Cliente: Carlos
+Estado: APROBADO
+Descuento: 5 %
+Valor después del descuento: 1710000.0
+Envío: 35000
+Valor final: 1745000.0
+Inventario restante: 18
+
+Cliente: Distribuciones ABC
+Estado: APROBADO
+Descuento: 8 %
+Valor después del descuento: 5520000.0
+Envío: 0
+Valor final: 5520000.0
+Inventario restante: 75
+
+Cliente: Andrea
+Estado: RECHAZADO
+Causas: ['Inventario insuficiente']
+Descuento: 0 %
+Valor después del descuento: 900000
+Envío: 0
+Valor final: 0
+Inventario restante: 8
+
+Cliente: Comercial XYZ
+Estado: RECHAZADO
+Causas: ['Inventario insuficiente', 'Más de 30 días de mora']
+Descuento: 0 %
+Valor después del descuento: 3500000
+Envío: 0
+Valor final: 0
+Inventario restante: 15
+
+========================================================================================================================
+PROBLEMA 2 - RIESGO OPERATIVO
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Valor: 4000000
+Riesgo inicial: Bajo
+Reglas activadas: []
+Riesgo final: Bajo
+Acción: Procesar
+
+Valor: 6000000
+Riesgo inicial: Bajo
+Reglas activadas: ['Cliente nuevo con menos de 3 meses']
+Riesgo final: Medio
+Acción: Revisar
+
+Valor: 9000000
+Riesgo inicial: Medio
+Reglas activadas: ['Tres o más modificaciones', 'Retraso superior a 20 días']
+Riesgo final: Alto
+Acción: Retener
+
+Valor: 10000000
+Riesgo inicial: Medio
+Reglas activadas: ['Reducción por cliente corporativo']
+Riesgo final: Bajo
+Acción: Procesar
+
+Valor: 16000000
+Riesgo inicial: Alto
+Reglas activadas: ['Reducción por cliente corporativo', 'Valor superior a $15.000.000']
+Riesgo final: Alto
+Acción: Retener
+
+========================================================================================================================
+PROBLEMA 3 - CONTROL DE INVENTARIO
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+Salida rechazada por inventario insuficiente
+
+Movimientos recibidos: 4
+Movimientos inválidos: 0
+Entradas aceptadas: 1
+Salidas aceptadas: 2
+Salidas rechazadas: 1
+Unidades ingresadas: 15
+Unidades salidas: 40
+Inventario final: 25
+No hubo inventario crítico
+Inventario calculado: 25
+Inventario verificado: 25
+VERIFICACIÓN CORRECTA
+
+========================================================================================================================
+PROBLEMA 4 - AUDITORÍA DE TRANSACCIONES
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+Transacción inválida: T05
+Transacción inválida: T06
+
+Recibidas: 6
+Válidas: 4
+Inválidas: 2
+Valor total válido: 10200000
+Transacciones alertadas: 3
+Alertas totales: 5
+
+Alertas por regla:
+Valor superior a $5.000.000: 1
+Horario 0-5: 1
+Devolución superior a $2.000.000: 1
+No autorizada: 1
+Ajuste superior a $500.000: 1
+
+Códigos a revisar: ['T02', 'T03', 'T04']
+Mayor transacción válida: T02 6200000
+Porcentaje de válidas con alerta: 75.0 %
+
+========================================================================================================================
+PROBLEMA 5 - ANÁLISIS DE COMENTARIOS
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Comentario: El servicio fue excelente y el asesor amable
+Favorables: 2
+Desfavorables: 0
+Clasificación: Favorable
+
+Comentario: El servicio fue lento y hubo demora
+Favorables: 0
+Desfavorables: 2
+Clasificación: Desfavorable
+
+Comentario: El producto fue bueno pero hubo problema
+Favorables: 1
+Desfavorables: 1
+Clasificación: Mixto
+
+Comentario: Excelente excelente servicio recomendado
+Favorables: 3
+Desfavorables: 0
+Clasificación: Favorable
+
+Comentario: La atención terminó a tiempo
+Favorables: 0
+Desfavorables: 0
+Clasificación: Sin clasificación
+
+Comentario: El servicio fue malo deficiente e incompleto
+Favorables: 0
+Desfavorables: 3
+Clasificación: Desfavorable
+
+Total favorables: 6
+Total desfavorables: 6
+Frecuencia de palabras: {'excelente': 3, 'amable': 1, 'lento': 1, 'demora': 1, 'bueno': 1, 'problema': 1, 'recomendado': 1, 'malo': 1, 'deficiente': 1, 'incompleto': 1}
+
+========================================================================================================================
+PROBLEMA 6 - CONSOLIDACIÓN DE VENTAS
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Ventas recibidas: 6
+Ventas válidas: 5
+Ventas inválidas: 1
+Valor bruto: 4860000
+Descuento: 345000.0
+Ingreso neto: 4515000.0
+
+CONSOLIDADO POR PRODUCTO
+
+Producto: A
+Categoría: Tecnología
+Unidades: 13
+Ingreso neto: 1530000.0
+Operaciones: 2
+Participación en ingreso: 33.88704318936877 %
+
+Producto: B
+Categoría: Tecnología
+Unidades: 3
+Ingreso neto: 2385000.0
+Operaciones: 2
+Participación en ingreso: 52.82392026578073 %
+
+Producto: C
+Categoría: Accesorios
+Unidades: 15
+Ingreso neto: 600000.0
+Operaciones: 1
+Participación en ingreso: 13.289036544850498 %
+
+Producto con más unidades: C
+Producto con mayor ingreso: B
+Ingreso global: 4515000.0
+Ingreso consolidado: 4515000.0
+VERIFICACIÓN CORRECTA
+
+========================================================================================================================
+PROBLEMA 7 - GESTIÓN DE PEDIDOS
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Cliente: C1
+Porcentaje entregado: 100.0 %
+Categoría: Cumplido
+Días de retraso: 0
+
+Cliente: C1
+Porcentaje entregado: 75.0 %
+Categoría: Cumplimiento parcial
+Días de retraso: 0
+
+Cliente: C2
+Porcentaje entregado: 100.0 %
+Categoría: Cumplimiento parcial
+Días de retraso: 2
+
+Cliente: C2
+Porcentaje entregado: 0.0 %
+Categoría: Incumplido
+Días de retraso: 0
+
+Cliente: C3
+Porcentaje entregado: 100.0 %
+Categoría: Incumplido
+Días de retraso: 0
+
+Cliente: C3
+Porcentaje entregado: 100.0 %
+Categoría: Cumplimiento parcial
+Días de retraso: 0
+
+Pedidos totales: 6
+Cumplidos: 1
+Parciales: 3
+Incumplidos: 2
+Unidades solicitadas: 40
+Unidades entregadas: 31
+Porcentaje global de cumplimiento: 77.5 %
+Promedio de días de retraso: 2.0
+
+RESUMEN POR CLIENTE
+
+Cliente: C1
+Pedidos: 2
+Cumplidos: 1
+Parciales: 1
+Incumplidos: 0
+
+Cliente: C2
+Pedidos: 2
+Cumplidos: 0
+Parciales: 1
+Incumplidos: 1
+
+Cliente: C3
+Pedidos: 2
+Cumplidos: 0
+Parciales: 1
+Incumplidos: 1
+
+========================================================================================================================
+PROBLEMA 8 - EVALUACIÓN DE PROVEEDORES
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+
+Proveedor: P1
+Puntualidad: 30
+Completos: 30
+Rechazos: 30
+Incidentes: 10
+Puntaje total: 100
+Categoría: Estratégico
+
+Proveedor: P2
+Puntualidad: 20
+Completos: 20
+Rechazos: 20
+Incidentes: 5
+Puntaje total: 65
+Categoría: En observación
+
+Proveedor: P3
+Puntualidad: 20
+Completos: 10
+Rechazos: 10
+Incidentes: 10
+Puntaje total: 50
+Categoría: Crítico
+
+Proveedor: P4
+Puntualidad: 30
+Completos: 30
+Rechazos: 30
+Incidentes: 10
+Puntaje total: 100
+Categoría: Confiable
+
+Proveedor: P5
+Puntualidad: 30
+Completos: 30
+Rechazos: 0
+Incidentes: 10
+Puntaje total: 70
+Categoría: Crítico
+
+Proveedor: P6
+Puntualidad: 30
+Completos: 30
+Rechazos: 30
+Incidentes: 0
+Puntaje total: 90
+Categoría: En observación
+
+Máximo: 100
+Mínimo: 50
+Promedio: 79.16666666666667
+Estratégicos: 1
+Confiables: 1
+En observación: 2
+Críticos: 2
+Porcentaje Crítico/En observación: 66.66666666666667 %
+
+========================================================================================================================
+PROBLEMA 9 - SISTEMA INTEGRADO
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+P01 entrega puntual
+P03 entrega tardía: 2 días
+P05 entrega puntual
+P06 entrega tardía: 2 días
+
+Registro inválido: P07
+
+Registro inválido: P08
+P09 entrega puntual
+
+ANÁLISIS POR PRODUCTO
+
+Producto: A
+Unidades solicitadas: 13
+Ingreso efectivo: 1260000.0
+
+Producto: B
+Unidades solicitadas: 6
+Ingreso efectivo: 2160000.0
+
+Producto: C
+Unidades solicitadas: 10
+Ingreso efectivo: 1440000.0
+
+Producto: D
+Unidades solicitadas: 2
+Ingreso efectivo: 2550000.0
+
+ANÁLISIS POR CLIENTE
+
+Cliente: C1
+Pedidos: 2
+Ingreso: 500000.0
+
+Cliente: C2
+Pedidos: 3
+Ingreso: 760000.0
+
+Cliente: C3
+Pedidos: 2
+Ingreso: 3600000.0
+
+Cliente: C4
+Pedidos: 1
+Ingreso: 2550000.0
+
+========================================================================================================================
+RESULTADOS FINALES - PROBLEMA 9
+========================================================================================================================
+************************************************************************************************************************
+qué hicimos?
+
+Recibe: _______________________________________
+Devuelve: _____________________________________
+
+************************************************************************************************************************
+Registros recibidos: 10
+Registros válidos: 8
+Registros inválidos: 2
+
+Estados:
+Entregados: 5
+Pendientes: 2
+Cancelados: 1
+
+Valor bruto global: 12100000
+Descuentos globales: 1250000.0
+Ingreso efectivo: 7410000.0
+
+Unidades entregadas: 24
+
+Producto más solicitado: A
+Producto de mayor ingreso: D
+
+Cliente de mayor ingreso: C3
+
+Clientes con cancelaciones: ['C2']
+Pedidos tardíos: 2
+Promedio días de retraso: 2.0
+
+VERIFICACIONES
+1. Válidos + inválidos = recibidos: CORRECTO
+2. Estados = válidos: CORRECTO
+Ingreso por productos: 7410000.0
+Ingreso por clientes: 7410000.0
+Ingreso efectivo global: 7410000.0
+3. Ingresos coinciden: CORRECTO
+************************************************************************************************************************
+Fin, gracias.
+************************************************************************************************************************
